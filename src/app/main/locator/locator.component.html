@@ -1,0 +1,24 @@
+<h1>{{ _formTitle }}</h1>
+<div>
+  <label for="latitude">Latitude:</label> <br />
+  <p-inputNumber
+    [(ngModel)]="location.latitude"
+    [minFractionDigits]="0"
+    [maxFractionDigits]="10"
+    inputId="latitude"
+  ></p-inputNumber>
+</div>
+
+<div style="margin-top: 1rem">
+  <label for="longitude">Longitude:</label> <br />
+  <p-inputNumber
+    [(ngModel)]="location.longitude"
+    [minFractionDigits]="0"
+    [maxFractionDigits]="10"
+    inputId="longitude"
+  ></p-inputNumber>
+</div>
+
+<div style="margin-top: 1rem">
+  <p-button label="Locate" (click)="submitLocate()"></p-button>
+</div>

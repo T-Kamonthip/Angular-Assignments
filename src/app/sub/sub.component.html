@@ -1,0 +1,11 @@
+<p>Sub</p>
+<!-- <button (click)="toMain()">Back to Main</button> -->
+<a routerLink="/">Back to Main</a>
+<div>
+  <h2>Person List</h2>
+  <ol>
+    <li *ngFor="let person of personList" [id]="person.id">
+      {{ person.name }}
+    </li>
+  </ol>
+</div>

@@ -1,0 +1,31 @@
+.head-line {
+  background-color: rgb(162, 202, 235);
+  color: rgb(33, 91, 158);
+  padding: 3px;
+}
+
+.custom-table {
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #d4d4d4;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-pic {
+  position: absolute;
+  max-width: 300px;
+  max-height: 400px;
+  right: 0;
+}

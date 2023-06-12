@@ -1,0 +1,3 @@
+<div #mapPanel class="map-panel" [ngClass]="{ 'cursor-wait': loading }"></div>
+
+<app-locator class="locator" (locate)="onLocate($event)"></app-locator>

@@ -1,0 +1,29 @@
+<h1>Comment Simulation</h1>
+
+<div>
+  <h2>New Comment:</h2>
+  <label for="name">Name: </label>
+  <input type="text" name="name" id="name" [(ngModel)]="comment.name" /> <br />
+  <label for="commemt">Comment: </label> <br />
+  <textarea
+    name="comment"
+    id="comment"
+    cols="30"
+    rows="10"
+    [(ngModel)]="comment.comment"
+  ></textarea
+  ><br />
+  <button (click)="onSubmit()">Submit</button>
+</div>
+
+<div>
+  <h2>Comments</h2>
+  <div *ngFor="let com of commentList">
+    <h3 style="color: gray">
+      {{ com.name }} <span class="font-date">{{ com.datetime }}</span>
+    </h3>
+    <p>{{ com.comment }}</p>
+    <button class="btn-underline" (click)="editComment(com.id)">Edit</button
+    ><button class="btn-underline" (click)="deleteComment(com.id)">Delete</button>
+  </div>
+</div>

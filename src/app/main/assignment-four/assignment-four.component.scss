@@ -1,0 +1,21 @@
+:host {
+    .map-panel {
+      width: 100vw;
+      height: 100vh;
+      margin: -8px;
+    }
+  
+    .locator {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .cursor-wait {
+      cursor: wait;
+    }
+  }
+  
